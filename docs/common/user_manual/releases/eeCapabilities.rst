@@ -5,60 +5,56 @@
 Capabilities
 ************
 
-**Version 3.4** of |app| was released **September 29**. The following lists the functionality available in this current version. (Note: New features and fixes in this release are marked :blue:`blue` in the following list of features.)
-
+**Version 3.4** of |app| was released on **September 29**. This version introduces new functionalities and enhancements, as detailed below. New features and fixes are highlighted in :blue:`blue`.
 
 Structural Information Model
 ============================
 
-Applications used to specify/select the structural model to be used in analysis.
+Facilitates the specification or selection of structural models for analysis.
 
-#. MDOF: creating idealized multi-degree-of-freedom models
-#. OpenSees: user-defined OpenSees models
-#. Steel Building Model: automating steel frame design and modeling
-#. Concrete Building Model: automating concrete moment frame design and modeling
+#. MDOF: Idealized multi-degree-of-freedom model creation
+#. OpenSees: Custom OpenSees model definition
+#. Steel Building Model: Automated steel frame design and modeling
+#. Concrete Building Model: Automated concrete moment frame design and modeling
 #. MDOF-LU: MDOF shear building model
-#. SurrogateGP: surrogate model trained in EE-UQ
-#. Multiple models: selecting multiple structural information models :blue:`[<- renaming from Multimodel]`
+#. SurrogateGP: Surrogate model training in EE-UQ
+#. Multiple models: Ability to select multiple structural models :blue:`[<- renamed from Multimodel]`
 
-    
 Earthquake Motion Event
 =======================
 
-Applications used to specify/select ground motions for the structure.
+Tools for specifying or selecting ground motions for analysis.
 
-#.  Stochastic Ground Motion: simulating stochastic ground motion recordings
-#.  PEER NGA Records: selecting and scaling PEER NGA West2 ground motions 
-#.  Site Response: propagating rock motions to the surface
-#.  Multiple PEER: using multiple PEER recordings
-#.  Multiple SimCenter: using multiple SimCenter-format recordings
-#.  User Specified Database: selecting and scaling ground motions from the user-specified flatfile
-
+#. Stochastic Ground Motion: Stochastic ground motion simulation
+#. PEER NGA Records: Selection and scaling of PEER NGA West2 ground motions
+#. Site Response: Surface propagation of rock motions
+#. Multiple PEER: Utilization of multiple PEER recordings
+#. Multiple SimCenter: Utilization of multiple SimCenter-format recordings
+#. User Specified Database: Selection and scaling of ground motions from a user-defined flatfile
 
 Engineering Demand Parameter Generator
 ======================================
 
-Applications to identify the output parameters of interest given the ground motion and structural model.
+Tools for identifying output parameters of interest based on the ground motion and structural model.
 
-#. Standard Earthquake: maximum story drift ratio, lateral story displacement, peak floor acceleration
-#. User Defined: user-specified EDP
-#. None: used only for surrogate model-based predictions
-    
-    
+#. Standard Earthquake: Maximum story drift ratio, lateral story displacement, peak floor acceleration
+#. User Defined: Custom EDP specification
+#. None: Reserved for surrogate model-based predictions
+
 Finite Element Application
 ==========================
 
-Applications used to determine the response output parameters given the ground motion and structural model.
+Tools for determining response output parameters based on the ground motion and structural model.
 
-#.  OpenSees: Open System for Earthquake Engineering Simulation
-#.  CustomPy-Simulation: user-provided python script`
-#.  None: used only for surrogate model-based predictions
-#.  Multiple models: selecting multiple finite element applications :blue:`[<- renaming from Multimodel]`
+#. OpenSees: Open System for Earthquake Engineering Simulation
+#. CustomPy-Simulation: Custom Python script
+#. None: Reserved for surrogate model-based predictions
+#. Multiple models: Ability to select multiple finite element applications :blue:`[<- renamed from Multimodel]`
 
 Uncertainty Quantification
 ==========================
 
-Applications to perform the uncertainty quantification for the response parameters given the inputs and the random variables present.
+Tools for performing uncertainty quantification of response parameters given the inputs and random variables.
 
 #. Forward Uncertainty Propagation
 
@@ -73,7 +69,7 @@ Applications to perform the uncertainty quantification for the response paramete
 
         #. Monte Carlo Sampling (MCS)
 
-           a. Resample from existing correlated dataset of samples
+           a. Resampling from an existing correlated dataset
 
         #. :blue:`Multi-fidelity Monte Carlo (MFMC)`
 
@@ -88,13 +84,11 @@ Applications to perform the uncertainty quantification for the response paramete
 
         #. Probability Model-based Global Sensitivity Analysis (PM-GSA)
 
-           a. Import input/output samples from data files
-
+           a. Importing input/output samples from data files
 
 #. Surrogate Modeling
 
      A. SimCenterUQ Engine Surrogate Options:
 
-        #. Probabilistic Learning on Manifolds (PLoM) Surrogate modeling
-        #. Gaussian Process Surrogate Modeling
-	   
+        #. Probabilistic Learning on Manifolds (PLoM)
+        #. Gaussian Process Modeling
